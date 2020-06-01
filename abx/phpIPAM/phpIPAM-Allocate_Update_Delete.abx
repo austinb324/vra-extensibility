@@ -1,0 +1,19 @@
+---
+exportVersion: "1"
+exportId: "8a7480da72551f0601727183451104e5"
+name: "phpIPAM-Allocate_Update_Delete"
+runtime: "python"
+entrypoint: "phpipam"
+inputs:
+  app: "XXXX"
+  auth: "Basic XXXXXXXXXXXXX"
+  app_token: "XXXXXXXXXXXXX"
+  phpipamhost: "XXXXXXXXXXXXX"
+timeoutSeconds: 180
+deploymentTimeoutSeconds: 600
+dependencies: "requests"
+actionType: "SCRIPT"
+provider: "on-prem"
+configuration:
+  const_azure-system_managed_identity: false
+memoryInMB: 300
